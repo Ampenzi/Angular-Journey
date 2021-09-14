@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 RewriteEngine On
  # If an existing asset or directory is requested go to it as it is 
  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
  RewruteRule ^ - [L]
  If the requested resource doesn't exist, use index.html
+=======
+RewriteEngine On
+ # If an existing asset or directory is requested go to it as it is 
+ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+ RewruteRule ^ - [L]
+ If the requested resource doesn't exist, use index.html
+>>>>>>> fd163aa792f16f68c0651b9050a3b9cb19f7b4ea
  RewriteRule ^/index.html
